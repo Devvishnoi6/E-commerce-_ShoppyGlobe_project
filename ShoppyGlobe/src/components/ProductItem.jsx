@@ -8,6 +8,7 @@ import './ProductItem.css';
 function ProductItem({ product }) {
   const dispatch = useDispatch();
 
+  //Function to handle adding the product to the cart
   const handleAddToCart = () => {
     dispatch(addToCart(product));
   };

@@ -8,6 +8,7 @@ import NotFound from './components/NotFound';
 import Checkout from './components/Checkout';
 import './App.css';
 
+//lazy loading of components 
 const ProductList = lazy(() => import('./components/ProductList'));
 const ProductDetail = lazy(() => import('./components/ProductDetail'));
 const Cart = lazy(() => import('./components/Cart'));
