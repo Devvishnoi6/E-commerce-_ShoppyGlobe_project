@@ -1,0 +1,106 @@
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and overall page layout */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #333;
+  }
+  
+  /* Header styling */
+  .header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Logo styling */
+  .header h1 {
+    font-size: 2rem;
+    margin-left: 20px;
+  }
+  
+  /* Navigation styling */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-right: 20px;
+  }
+  
+  /* Navigation links container */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Navigation link styles */
+  .nav-links li {
+    padding: 8px 12px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  /* Hover effect */
+  .nav-links a:hover {
+    color: #f1c40f;
+    width: 100%;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav {
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      width: 100%;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .nav-links li {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  /* For smaller screens (mobile-first approach) */
+  @media (max-width: 480px) {
+    .header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .nav-links a {
+      font-size: 1rem;
+    }
+  }
+  
+  
