@@ -23,7 +23,7 @@ function ProductItem({ product }) {
         <p> <b>Price</b> - ${product.price} USD</p>
         <p><b>Ratings</b> - {product.rating} ⭐</p>
       </Link>
-      <button onClick={handleAddToCart}>Add to Cart</button>
+      <button onClick={handleAddToCart} >🧺 Add to Cart</button>
       <Link to={`/product/${product.id}`} className="button">View Details</Link>
     </div>
   );
